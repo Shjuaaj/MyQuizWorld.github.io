@@ -1,0 +1,71 @@
+body{ 
+  background-color:rgb(109, 9, 109); 
+    color:#000000; 
+    font-size: 16px; 
+    font-family: Verdana; 
+  background-image: url("../assets/images/portal_img.jpeg"); 
+  
+   
+    
+ 
+} 
+.header-align { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: rgb(200 16 200); 
+   
+    font-family:Verdana; 
+    font-style:normal; 
+    font-size:24px; 
+    color:white; 
+  } 
+   
+  .header-align label { 
+    text-align: right; 
+  } 
+   
+  .button{ 
+      width:100%; 
+      height:100%; 
+  } 
+   
+  .header-align a { 
+    text-align: left; 
+  } 
+  #timerdisp{ 
+    background-color: rgb(200 16 200); 
+    font-family:Verdana; 
+    font-style:normal; 
+    font-size:24px; 
+    color:white; 
+    align-content: right; 
+  } 
+  #carddiv{ 
+    text-align: left; 
+    height:60%; 
+    width: 85%; 
+    border-radius: 25px; 
+    padding: 10px; 
+    box-shadow: 8px 6px 2px 0px rgba(0, 0, 0, .2) ; 
+  } 
+  #stbtn, #bkbtn , #clrdata { 
+    border-radius:11px; 
+    height:50px; 
+    background-color: rgb(200 16 200); 
+    color:white; 
+  } 
+  #op1 , #op2 , #op3 , #op4 { 
+    text-align:left; 
+    border-radius:11px; 
+    height:50px; 
+    background-color:  rgb(200 16 200); 
+    color:white; 
+  } 
+  #submit{ 
+    text-align:left; 
+    border-radius:11px; 
+    height:50px; 
+    background-color: rgb(200 16 200); 
+    color:white 
+  }

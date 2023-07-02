@@ -1,0 +1,108 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+<link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Diphylleia&family=Libre+Baskerville&family=Source+Serif+4:wght@500&family=Ysabeau+Infant:ital@1&family=Ysabeau+SC:wght@300&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Diphylleia&family=Libre+Baskerville&family=Source+Serif+4:wght@500&family=Ysabeau+Infant:ital@1&family=Ysabeau+SC:wght@300&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Diphylleia&family=Libre+Baskerville&family=Source+Serif+4:wght@500&family=Ysabeau+Infant:ital@1&family=Ysabeau+SC:wght@300&display=swap" rel="stylesheet"> 
+    <title>Quiz Project</title> 
+   
+   
+</head> 
+ 
+<body > 
+    <div > 
+    <header  class="header-align" > 
+        <a style="font-family: 'Bacasime Antique', serif; 
+        font-family: 'Diphylleia', serif; 
+        font-family: 'Libre Baskerville', serif; 
+        font-family: 'Source Serif 4', serif; 
+        font-family: 'Ysabeau Infant', sans-serif; 
+        font-family: 'Ysabeau SC', sans-serif;"id=leaderboard onclick="highsc()">View Highscores<i class="fas fa-hand-point-left fa-lg"></i> 
+        </i></a>  
+ 
+       <a  style="font-family: 'Bacasime Antique', serif; 
+       font-family: 'Diphylleia', serif; 
+       font-family: 'Libre Baskerville', serif; 
+       font-family: 'Source Serif 4', serif; 
+       font-family: 'Ysabeau Infant', sans-serif; 
+       font-family: 'Ysabeau SC', sans-serif;"id="timerdisp" >Time:<label id="time"></label></a> 
+ 
+         
+         
+    
+    </header></div> 
+   <br><br><br><br> 
+<div class="container card-columns " ><center> 
+<div id="carddiv" class="container card bg-white "> 
+<br> 
+  <div class="card-body" id="dataContainer"> 
+    <h5 style="font-family: 'Bacasime Antique', serif; 
+    font-family: 'Diphylleia', serif; 
+    font-family: 'Libre Baskerville', serif; 
+    font-family: 'Source Serif 4', serif; 
+    font-family: 'Ysabeau Infant', sans-serif; 
+    font-family: 'Ysabeau SC', sans-serif;"class="card-title " id="tit"><b>Science Quiz Challenge</b></h5> 
+    <p style="font-family: 'Bacasime Antique', serif; 
+    font-family: 'Diphylleia', serif; 
+    font-family: 'Libre Baskerville', serif; 
+    font-family: 'Source Serif 4', serif; 
+    font-family: 'Ysabeau Infant', sans-serif; 
+    font-family: 'Ysabeau SC', sans-serif;" class="card-text text-wrap" id="ques">Try to answer to following Science related questions within the time limit.</p> 
+    <p style="font-family: 'Bacasime Antique', serif; 
+    font-family: 'Diphylleia', serif; 
+    font-family: 'Libre Baskerville', serif; 
+    font-family: 'Source Serif 4', serif; 
+    font-family: 'Ysabeau Infant', sans-serif; 
+    font-family: 'Ysabeau SC', sans-serif;" class="card-text text-wrap" id="op">Keep in mind that incorrect answers will be penalize your score/time by five seconds.</p> 
+  
+  
+    <button  style="font-family: 'Bacasime Antique', serif; 
+    font-family: 'Diphylleia', serif;
+    font-family: 'Libre Baskerville', serif; 
+    font-family: 'Source Serif 4', serif; 
+    font-family: 'Ysabeau Infant', sans-serif; 
+    font-family: 'Ysabeau SC', sans-serif;" id="stbtn"  class="btn btn-lg" >Play Now</button> 
+      
+    <button id="bkbtn" onclick="backbtn()" class="btn "> Back </button> 
+ <button id="clrdata" onclick="clrdata()" class="btn " > Clear Data </button> 
+    <button id="op1" onclick="ck(1)" class="btn btn-lg button" ></button> 
+    <br><br><label   style="font-family: 'Bacasime Antique', serif; 
+    font-family: 'Diphylleia', serif; 
+    font-family: 'Libre Baskerville', serif; 
+    font-family: 'Source Serif 4', serif; 
+    font-family: 'Ysabeau Infant', sans-serif; 
+    font-family: 'Ysabeau SC', sans-serif;" id="ent">Enter Initials:</label> 
+    <input style="font-family: 'Bacasime Antique', serif; 
+    font-family: 'Diphylleia', serif; 
+    font-family: 'Libre Baskerville', serif; 
+    font-family: 'Source Serif 4', serif; 
+    font-family: 'Ysabeau Infant', sans-serif; 
+    font-family: 'Ysabeau SC', sans-serif;" type="text" id="input"> <button onclick="alldone()" id="submit" class="btn  " >Submit 
+     </button> 
+     <button id="op2" onclick="ck(2)" class="btn btn-lg button " ></button> 
+     <br><br> 
+      <button id="op3" onclick="ck(3)" class="btn btn-lg button" ></button> 
+      <br><br> 
+       <button id="op4" onclick="ck(4)" class="btn btn-lg button" ></button> 
+       <hr id="hrr"> 
+       <h5 id="h5"></h5> 
+  </div> 
+ 
+</div></center></div> 
+<script  src="index.js" charset="utf-8"></script> 
+</body> 
+ 
+</html>
